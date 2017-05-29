@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width">
+	<title>Viajes de ensueño</title>
+	<link rel="stylesheet" type="text/css" href="style/estilos.css">
+</head>
+<body>
+
+
+	<header>
+		<!--<nav class="ayuda">-->
+		<nav class="container">
+			<ul>
+				<li class="lista-item"><a href="">¿Necesitas ayuda?</a> | </li>
+				<li class="lista-item"><a href="">Últimas búsquedas</a> | </li>
+				<li class="lista-item"><a href="">Mis viajes</a> | </li>
+				<li class="lista-item"><a href="">Inicia sesión o Regístrate</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<img src="imagenes/logo3.jpg">
+		</div>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="#inicio">Inicio</a></li>
+			<li><a href="#vuelos">Vuelos</a></li>
+			<li><a href="#hoteles">Hoteles</a></li>
+			<li><a href="#vuelos+hoteles">Vuelos+Hoteles</a></li>
+			<li><a href="#coches">Coches</a></li>
+			<li><a href="#traslados">Traslados</a></li>
+		</ul>
+	</nav>
+
+	<div class="fondoForm">
+		<div class="formulario">
+			<form name="datos" method="post" action="">
+				<div class="col">
+					<p><input type="text" name="origen" placeholder="Origen"/></p>
+					<p><input type="date" name="fechaIda" placeholder="Fecha de ida"/></p>
+					<p><select name="numViajeros">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select></p>
+					<p><input type="submit" value="Buscar vuelos" class="vuelo"/> <input type="submit" value="Buscar vuelo + Hotel" class="vueloHotel"/></p>
+				</div>
+				<div class="col">
+					<p><input type="text" name="destino" placeholder="Destino"/></p>
+					<p><input type="date" name="fechaVuelta" placeholder="Fecha de vuelta"/></p>
+					<div class="relleno"><p><input type="checkbox" name="directos">Solo vuelos directos</p></div>
+					<div class="verde"><p><img src="imagenes/check.png"/>Garantía de mejor precio</p></div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<footer>
+		Creado por @Beatriz López López
+	</footer>
+
+</body>
+</html>
