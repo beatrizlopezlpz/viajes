@@ -10,34 +10,101 @@
 	background-color: rgb(244,243,239);
 	font-size: 1.2em;
 }
+.menuInf{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+	background-color: rgb(0,51,153);
+	font-size: 1.2em;
+}
+.lista-item{
+	padding: 0.2em 0.5em;
+}
 header nav ul li a{
 	color: black;
 }
+header div nav ul li a{
+	color: white;
+}
+
 nav ul{
 	list-style-type: none;
-	xmargin: 0;
-	xpadding: 0;
-	xoverflow: hidden;
+	padding: 0;
 }
 nav li{
 	display: inline;
-	/*float: right;*/
-	xpadding: 1%;
 }
 li a{
-	color: white;
 	text-decoration: none;
 }
 .logo{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: flex-start;
+	justify-content: space-between;
 	background-color: rgb(0,51,153);
 }
 .verde{
 	color: rgb(29,182,111);
-	padding-top: 0.7em;
+	padding-top: 0.2em;
+}
+input[type=text], input[type=date]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=text]:focus, input[type=date]:focus {
+    background-color: lightblue;
+}
+select {
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+.vuelo{
+    padding: 0.8em 1.2em;
+    margin: 8px 0;
+    border: none;
+    border-radius: 0.2em;
+    background-color: rgb(30,68,213);
+    color: white;
+    font-size: 1.3em;
+}
+.vueloHotel{
+    padding: 0.8em 1.2em;
+	margin: 8px 0;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 4px;
+    background-color: white;
+    color: rgb(30,68,213);
+    font-size: 1.3em;
+}
+.relleno{
+	padding-top: 0.1em;
+}
+.formulario{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	width: 100%;
+}
+.campos{
+	justify-content: center;
+}
+footer{
+	color: grey;
+	text-align: center;
+	font-size: 0.9em;
+	padding-top: 1.2em;
+}
+.xfondoForm{
+	background-image: url('../res/icon/android/ayuntamiento.jpg');
+	background-size: 50%;
+	opacity: 0.5;
 }
 /*
 
@@ -65,54 +132,16 @@ nav{
 }
 
 
-footer{
-	float: left;
-	width: 70%;
-	padding: 0% 15%;
-	color: black;
-	text-align: center;
-	font-size: 0.9em;
-}
-.fondoForm{
-	float: left;
-	width: 100%;
-	background-image: url("imagenes/logo3.jpg");
-}
-.formulario{
-	float: left;
-	width: 70%;
-	padding: 0% 15%;
-}
+
+
+
 .col{
 	float: left;
 	width: 48%;
 	padding: 0.5%;
 }
-input[type=text], input[type=date]{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-input[type=text]:focus, input[type=date]:focus {
-    background-color: lightblue;
-}
-select {
-    width: 100%;
-    padding: 16px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f1f1f1;
-}
-.vuelo{
-	width: 49%;
-    padding: 0.8em 1.2em;
-    border: none;
-    border-radius: 0.2em;
-    background-color: rgb(30,68,213);
-    color: white;
-    font-size: 1.3em;
-}
+
+
 .xvuelo{
 	width: 49.5%;
     padding: 0.8em 1.2em;
@@ -122,17 +151,7 @@ select {
     color: white;
     font-size: 1.3em;
 }
-.vueloHotel{
-	width: 49%;
-    padding: 0.8em 1.2em;
-    border: 1px solid rgb(204,204,204);
-    border-radius: 4px;
-    background-color: white;
-    color: rgb(30,68,213);
-    font-size: 1.3em;
-}
-.relleno{
-	padding-top: 0.1em;
-}
+
+
 
 */
